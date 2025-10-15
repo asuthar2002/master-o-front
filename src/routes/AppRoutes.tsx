@@ -10,6 +10,7 @@ import CreateQuestion from "../pages/private/CreateQuestion";
 import AllQuestions from "../pages/public/AllQuestions";
 import ShowQuestions from "../pages/public/ShowQuestions";
 import ReportsPage from "../pages/private/ReportsPage";
+import ProfileCard from "../pages/public/ProfileCard";
 
 
 function AppRoutes() {
@@ -26,6 +27,8 @@ function AppRoutes() {
 
         {/* Logged-in user routes */}
         <Route element={<ProtectedRoute allowedRoles={["user", "admin"]} />}>
+          <Route path="/profile" element={<ProfileCard />} />
+
         </Route>
 
         {/*Admin-only routes */}

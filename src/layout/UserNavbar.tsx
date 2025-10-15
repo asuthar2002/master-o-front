@@ -32,9 +32,6 @@ const Navbar: React.FC = () => {
           <Link to="/solutions" className="text-gray-700 hover:text-blue-600 font-medium">
             Solve
           </Link>
-          <Link to="/submit-query" className="text-gray-700 hover:text-blue-600 font-medium">
-            Submit Query
-          </Link>
           {isAdmin && (
             <>
               <Link to="/admin/question/create-new-question" className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">
@@ -119,14 +116,6 @@ const Navbar: React.FC = () => {
           >
             Solutions
           </Link>
-          <Link
-            to="/submit-query"
-            className="block px-4 py-3 text-gray-700 hover:bg-gray-100"
-            onClick={() => setMenuOpen(false)}
-          >
-            Submit Query
-          </Link>
-
           {isAdmin && (
             <>
               <Link
