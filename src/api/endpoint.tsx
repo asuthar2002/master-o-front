@@ -1,6 +1,6 @@
 export const APP_URL = "https://master-o-quizz-back-a.up.railway.app"
 
-export const endpoints = {
+export const endpoints = { 
     auth: {
         registerUser: `${APP_URL}/api/auth/signup`,
         loginUser: `${APP_URL}/api/auth/login`,
