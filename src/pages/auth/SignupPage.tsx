@@ -61,7 +61,7 @@ function Signup() {
       await dispatch(userSignup(formData)).unwrap();
 
       toast.success("Signup successful! Redirecting to home...");
-      navigate("/");
+      navigate("/login");
     } catch (err) {
       toast.error("Signup failed. Please try again.");
     }
