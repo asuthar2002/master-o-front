@@ -25,6 +25,10 @@ const ShowQuestions = () => {
     };
 
     const handleSubmitAnswer = async (questionId: number) => {
+         if (!user) {
+            toast.error("Please Login First");
+            return;
+        }
         const selectedIndex = userAnswers[questionId];
         if (selectedIndex == null) {
             toast.warn("Please select an answer first.");
